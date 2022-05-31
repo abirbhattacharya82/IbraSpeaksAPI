@@ -11,5 +11,18 @@
 ```
 ibra-speaks-api.herokuapp.com/
 ```
+<p>Implementation in JavaScript</p>
+
+```
+fetch('https://ibra-speaks-api.herokuapp.com/').then(
+        (arr)=>{
+            arr.json().then(
+                (res)=>{
+                    console.log(res[0]["quote"]);
+                }
+            )
+        }
+    )
+```
 
 <h4>This is Repository is created using Node and Express. If you like it do give a star.</h4>
